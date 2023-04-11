@@ -4,6 +4,7 @@ const { Client, Collection, Events, GatewayIntentBits } = require('discord.js');
 const { token } = require('./config.json');
 const fs = require('node:fs')
 const path = require('node:path');
+const {Player} = require('discrod-player')
 
 // Create a client instance (no intents?) Makes a BOT
 const client = new Client({ intents: [GatewayIntentBits.Guilds] });
